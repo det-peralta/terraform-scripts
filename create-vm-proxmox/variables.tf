@@ -3,14 +3,9 @@ variable "virtual_environment_endpoint" {
   description = "The endpoint for the Proxmox Virtual Environment API (example: https://host:port)"
 }
 
-# variable "virtual_environment_token" {
-#   type        = string
-#   description = "The token for the Proxmox Virtual Environment API"
-# }
-
 variable "virtual_environment_username" {
   type        = string
-  description = "Use terraform variable or remove the line, and use PROXMOX_VE_USERNAME environment variable"
+  description = "Use terraform variable or remove the line, and use PROXMOX_VE_USERNAME environment variable (example: root@pam)"
 }
 
 variable "virtual_environment_password" {
